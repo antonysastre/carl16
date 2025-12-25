@@ -26,7 +26,7 @@ The chipset is organized by complexity and dependencies:
 
 ## C16 Assembly Language
 
-### `/assembler` - C16 Assembler
+### `/assembler` - C16 Assembler (Rust)
 
 The Carl16 computer uses C16 assembly language, a simple assembly language with:
 
@@ -35,9 +35,9 @@ The Carl16 computer uses C16 assembly language, a simple assembly language with:
 - Screen memory (addresses 0x4000-0x5FFF)
 - Keyboard input (address 0x6000)
 
-#### `/assembler/c16` - Rust-based Assembler
+The assembler is implemented in Rust and includes:
 
-- **src/** - Assembler source code (Rust)
+- **src/** - Assembler source code
 - **tests/** - C16 assembly test programs
   - `basic.asm` - Basic load/store operations
   - `add.asm` - Addition of two numbers
@@ -49,10 +49,10 @@ The Carl16 computer uses C16 assembly language, a simple assembly language with:
   - `screen.asm` - Screen drawing operations
   - `rectangle.asm` - Interactive screen filling
 
-### Assembler
+### Building the Assembler
 
 ```bash
-cd assembler/c16
+cd assembler
 cargo build --release
 ```
 
