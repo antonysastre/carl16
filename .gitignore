@@ -1,0 +1,23 @@
+# Rust build artifacts
+target/
+**/*.rs.bk
+Cargo.lock
+
+# Key files
+*.key
+
+# Editor/IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# macOS
+.DS_Store
+
+# Linux
+.directory
+
+# Windows
+Thumbs.db
